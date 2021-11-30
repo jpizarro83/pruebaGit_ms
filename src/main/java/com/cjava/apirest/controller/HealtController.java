@@ -9,4 +9,9 @@ public class HealtController
 		return "{ \"todoOk employee - memoria\" : true }";
 	}
 
+	@GetMapping(value = "/test/healthcheck2", produces = "application/json; charset=utf-8")
+	public String getHealthCheck2()	{
+		return "{ \"todoOk employee - memoria\" : true }";
+	}
+
 }

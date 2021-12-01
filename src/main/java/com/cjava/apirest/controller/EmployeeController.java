@@ -80,4 +80,11 @@ public class EmployeeController
 		Employee emp = new Employee(id, newEmployee.getFirstName(), newEmployee.getLastName(), newEmployee.getEmail());
 		return emp;
 	}
+
+	@PostMapping("/cambio2")
+	public Employee cambio2(@RequestBody Employee newEmployee){
+		String id = String.valueOf(new Random().nextInt());
+		Employee emp = new Employee(id, newEmployee.getFirstName(), newEmployee.getLastName(), newEmployee.getEmail());
+		return emp;
+	}
 }

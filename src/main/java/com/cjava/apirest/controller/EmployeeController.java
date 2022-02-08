@@ -52,4 +52,30 @@ public class EmployeeController
 		Employee emp = new Employee(id, newEmployee.getFirstName(), newEmployee.getLastName(), newEmployee.getEmail());
 		return emp;
 	}
+
+	@PostMapping("/employee/v1")
+	public Employee addEmployeev1(@RequestBody Employee newEmployee){
+		String id = String.valueOf(new Random().nextInt());
+		Employee emp = new Employee(id, newEmployee.getFirstName(), newEmployee.getLastName(), newEmployee.getEmail());
+		return emp;
+	}
+
+	@PostMapping("/employee/v2")
+	public Employee addEmployeev2(@RequestBody Employee newEmployee){
+		String id = String.valueOf(new Random().nextInt());
+		Employee emp = new Employee(id, newEmployee.getFirstName(), newEmployee.getLastName(), newEmployee.getEmail());
+		return emp;
+	}
+	@PostMapping("/employee/v3")
+	public Employee addEmployeev3(@RequestBody Employee newEmployee){
+		String id = String.valueOf(new Random().nextInt());
+		Employee emp = new Employee(id, newEmployee.getFirstName(), newEmployee.getLastName(), newEmployee.getEmail());
+		return emp;
+	}
+	@PostMapping("/employee/v4")
+	public Employee addEmployeev4(@RequestBody Employee newEmployee){
+		String id = String.valueOf(new Random().nextInt());
+		Employee emp = new Employee(id, newEmployee.getFirstName(), newEmployee.getLastName(), newEmployee.getEmail());
+		return emp;
+	}
 }
